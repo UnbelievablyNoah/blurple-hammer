@@ -4,6 +4,6 @@ services:
   blurple-hammer:
     build: .
     volumes:
-      - ./src/database:/app/src/database
+      - ./database:/app/database
     ports:
       - 1011:1011
