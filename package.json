@@ -1,12 +1,12 @@
 {
   "name": "blurple-hammer",
-  "main": "build/bot.js",
+  "main": "build/src/bot.js",
   "scripts": {
     "setup": "npm i --save-dev && tsc",
     "start": "node .",
     "start:docker": "docker compose build && docker compose up",
     "watch": "tsc -w",
-    "lint": "eslint --ext \".js\" ./src"
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "zlib-sync": "^0.1.7"
   },
   "devDependencies": {
+    "@types/quick-store": "^0.1.0",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
     "eslint": "^7.32.0"
